@@ -1,44 +1,137 @@
-.wrapper {
+.wrap {
+ width: 100%;
+ height: 100%;
+ margin: auto;
+}
+
+.header {
  width: 100%;
  height: auto;
- _overflow: hidden;
+ margin: auto;
+ align-items: center;
+ border-bottom: 1px solid #ddd;
+ ;
 }
 
-section {
+.inner-wrap {
  width: 100%;
- height: auto;
+ display: flex;
+ height: 80%;
 }
 
-section div.one-layout {
- width: 100%;
- height: 100px;
- background: #999;
-}
-
-section div.three-layout {
- width: 100%;
+.nav {
+ width: 45%;
  height: auto;
  display: flex;
- flex-wrap: wrap;
+ justify-content: space-evenly;
+ padding-top: 30px;
 }
 
-section div.three-layout>div {
- width: 33.33%;
- height: 100px;
- border: 1px solid;
- _float: left;
+.logo {
+ width: 20%;
+ display: inline-block;
+ height: 80px;
+ margin-right: 0;
+ background: url(../img/logo.png) no-repeat 0 0;
 }
 
-section div.four-layout {
+.logo .a {
+ align-items: center;
+ justify-content: center;
+}
+
+.search {
+ width: 20%;
+ overflow: hidden;
+ position: relative;
+ height: 44px;
+ border-color: #f0f0f0;
+ border-radius: 0;
+ box-shadow: none;
+ background: #f0f0f0;
+ margin: 20px;
+}
+
+.search>input {
+ position: relative;
+ width: calc(100% - 60px);
+ height: 100%;
+ padding: 10px 20px;
+ border: 0;
+ font-size: 16px;
+ font-weight: 300;
+ background: transparent;
+ overflow: hidden;
+ white-space: nowrap;
+}
+
+.search .btn-search {
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 50px;
+ height: 100%;
+}
+
+.bag {
+ padding-top: 2px;
+ height: 30px;
+ align-items: center;
+ margin: 20px;
+ font-size: 30px;
+ color: #ef426f;
+}
+
+.category {
  width: 100%;
+ display: flex;
+}
+
+.allmenu {
+ height: 20%;
+ display: inline-block;
+ padding: 15px 10px;
+ vertical-align: middle;
+ text-align: center;
+ line-height: 1 !important;
+}
+
+.allmenu .fa-bars {
+ height: 20px;
+ font-size: 20px;
+ color: #ef426f;
+ padding-left: 30px;
+}
+
+.allmenu .text {
+ font-size: 18px;
+ padding-left: 10px;
+ font-family: "Noto Sans KR";
+ font-weight: 400;
+}
+
+.gnb {
+ width: 60%;
  height: auto;
  display: flex;
- flex-wrap: wrap;
 }
 
-section div.four-layout>div {
- width: 25%;
- height: 100px;
- border: 1px solid;
- _float: left;
+.gnb li {
+ width: 60%;
+ padding: 15px 10px;
+ text-align: center;
+}
+
+.gnb li a {
+ position: relative;
+ display: block;
+ padding: 0 19px;
+ line-height: 27px;
+ color: #333;
+}
+
+.gnb .now {
+ width: 20%;
+ background: url(../img/allmenu1.png);
+ background-size: cover;
 }
