@@ -1,62 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Etudehouse</title>
-
- <!-- Font Awesome -->
- <script src="https://kit.fontawesome.com/8b02d36c42.js" crossorigin="anonymous"></script>
- <!-- Google Fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
- <!-- Style Framework -->
- <link rel="shortcut icon" href="/kr/ko/favicon.ico">
- <!-- Custom Style -->
- <link rel="stylesheet" href="/renewal/css/reset.css">
- <link rel="stylesheet" href="/renewal/css/style.css">
- <link rel="stylesheet" href="/renewal/css/media/media.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media/media.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Document</title>
 </head>
 <body>
- <div class="wrap">
-  <section class="header">
-    <div class="inner-wrap">
-     <ul class="nav">
-      <li>로그인</li>
-      <li>회원가입</li>
-      <li>주문배송</li>
-      <li>조회</li>
-     </ul>
+  <div id="wrapper">
+   <header>
+      <div class="log-in">
+        <ul>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">주문/배송조회</a></li>
+          <li><a href="#">히스토리</a></li>
+        </ul>
+      </div>
       <div class="logo">
-        <a href="http://localhost/renewal/"></a>
+        <img src="img/logo.png" alt="">
       </div>
-      <div class="search">
-      <input type="text">
-      <button class="btn-search"><i class="fas fa-search"></i> </button>
+      <div class="input">
+        <div class="search">
+          <input type="text" placeholder="검색하고자 하는 것을 입력하세요">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="bag">
+          <i class="fas fa-shopping-bag"></i>
+        </div>
       </div>
-      <div class="bag">
-        <i class="fas fa-shopping-bag"></i></i>
+    </header>
+      <div class="menu">
+        <div class="cate">
+          <div class="catalog">
+            <i class="fas fa-bars"></i>
+            <a href="#">카테고리</a>
+          </div>
+          <img src="img/allmenu1.png">
+        </div> 
+        <div class="nav">
+          <ul>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">신상품</a></li>
+            <li><a href="#">베스트</a></li>
+            <li><a href="#">쿠폰/혜택</a></li>
+            <li><a href="#">셀러샵</a></li>
+            <li><a href="#">컬러팩토리</a></li>
+          </ul>
+        </div>
+     </div>
+     <div class="slides">
+        <div class="slider">
+         <div class="image"></div>
+         <div class="image"></div>
+         <div class="image"></div>
+
+          </div>
+          <div class="btns">
+            <button class="prev">prev</button>
+            <button class="next">next</button>
+          </div>
       </div>
+    <div class="item">
+      <a href="#">신상품</a>
+      <div class="list-wrap">
+        <div class="lists">
+          <div class="new">
+            <div class="list">
+              <img src="img/사진1.jpg">
+            </div>
+            <div class="text">
+              <h3>케어딕트 올인원 베이스</h3>
+              <strong>18,000원</strong>
+            </div>
+          </div>
+          <div class="new">
+            <div class="list">
+              <img src="img/사진2.jpg">
+            </div>
+            <div class="text">
+              <h3>드로잉 아이즈 하드 브로우 오토</h3>
+              <strong>8,000원</strong>
+            </div>
+          </div>
+          <div class="new">
+            <div class="list">
+              <img src="img/사진3.jpg">
+            </div>
+            <div class="text">
+              <h3>플레이 컬러 아이즈 더스티 캣 + 쿨러 백</h3>
+              <strong>20,000원</strong>
+            </div>
+          </div>
+          <div class="new">
+            <div class="list">
+              <img src="img/사진4.jpg">
+            </div>
+            <div class="text">
+              <h3>플레이 컬러 아이즈 더스티 캣</h3>
+              <strong>17,500원</strong>
+            </div>
+          </div>
+          <div class="new">
+            <div class="list">
+              <img src="img/사진5.png">
+            </div>
+            <div class="text">
+              <h3>애교살 메이커</h3>
+              <strong>12,000원</strong>
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <button class="prev">prev</button>
+          <button class="next">next</button>
+        </div>
+        <div class="list">
+
+        </div>
+      </div>
+
     </div>
-  </section>
-  <section class="category">
-    <div class="allmenu">
-      <i class="fas fa-bars"></i>
-      <a href="#" class="text"> 카테고리</a>
-    </div>
-    <ul class="gnb">
-      <li><a href="#"></a></li>
-      <li><a href="#">이벤트</a></li>
-      <li><a href="#">신상품</a></li>
-      <li><a href="#">베스트</a></li>
-      <li><a href="#">쿠폰/혜택</a></li>
-      <li><a href="#">셀렉샵</a></li>
-      <li><a href="#">컬러팩토리</a></li>
-    </ul>
-   </div>
-  </section>
- </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+   let current= 0 ;
+  const btn = document.querySelectorAll('.btns button');
+  const slideBoxes = document.querySelector(".slider");
+  const slideBox = document.querySelectorAll(".image");
+  function slider(n){
+    slideBoxes.animate([{ left: -100 * n + "%" }],{duration:300, iterations:1,fill:"forwards"});
+    current = n;
+  }
+  btn.forEach(function(elm){
+    elm.addEventListener('click',function(){
+  //  console.log(this);
+   if(this.classList.contains('prev')){
+    if(current==0){
+        return false
+      } else { 
+        slider(current - 1);
+      };
+   } else{
+  //  console.log("false");
+    if(current==slideBox.length-1){
+        return false
+      } else { 
+        slider(current + 1);
+      };
+    }
+   });
+  });
+  slider(current);
+  </script>
 </body>
 </html>
