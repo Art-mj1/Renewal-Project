@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <div class="item" style="display: flex; height: 360px;">
+  <div class="prev">&lt;</div>
+  <!--<a href="#">신상품</a>-->
+  <div class="list-wrap" style="width: 100%; height: 100%; overflow: hidden; position: relative;">
+   <div class="lists" style="width: 200%; display: flex; position: absolute; top: 0; left: 0;">
+    <div class="list-item" style="display: flex; width: 100%;">
+     <div class="new">
+       <div class="list">
+         <img src="img/사진1.jpg">
+       </div>
+       <div class="text">
+         <h3>케어딕트 올인원 베이스</h3>
+         <strong>18,000원</strong>
+       </div>
+     </div>
+     <div class="new">
+       <div class="list">
+         <img src="img/사진2.jpg">
+       </div>
+       <div class="text">
+         <h3>드로잉 아이즈 하드 브로우 오토</h3>
+         <strong>8,000원</strong>
+       </div>
+     </div>
+     <div class="new">
+       <div class="list">
+         <img src="img/사진3.jpg">
+       </div>
+       <div class="text">
+         <h3>플레이 컬러 아이즈 더스티 캣 + 쿨러 백</h3>
+         <strong>20,000원</strong>
+       </div>
+     </div>
+     <div class="new">
+       <div class="list">
+         <img src="img/사진4.jpg">
+       </div>
+       <div class="text">
+         <h3>플레이 컬러 아이즈 더스티 캣</h3>
+         <strong>17,500원</strong>
+       </div>
+     </div>
+     <div class="new">
+       <div class="list">
+         <img src="img/사진5.png">
+       </div>
+       <div class="text">
+         <h3>애교살 메이커</h3>
+         <strong>12,000원</strong>
+       </div>
+     </div>
+   </div>
+   <div class="list-item" style="display: flex; width: 100%;">
+     <div class="new">
+       <div class="list">
+         <img src="img/사진3.jpg">
+       </div>
+       <div class="text">
+         <h3>케어딕트 올인원 베이스</h3>
+         <strong>18,000원</strong>
+       </div>
+     </div>
+     <div class="new">
+       <div class="list">
+         <img src="img/사진2.jpg">
+       </div>
+       <div class="text">
+         <h3>드로잉 아이즈 하드 브로우 오토</h3>
+         <strong>8,000원</strong>
+       </div>
+     </div>
+     <div class="new">
+       <div class="list">
+         <img src="img/사진1.jpg">
+       </div>
+       <div class="text">
+         <h3>플레이 컬러 아이즈 더스티 캣 + 쿨러 백</h3>
+         <strong>20,000원</strong>
+       </div>
+     </div>
+     <div class="new">
+       <div class="list">
+         <img src="img/사진4.jpg">
+       </div>
+       <div class="text">
+         <h3>플레이 컬러 아이즈 더스티 캣</h3>
+         <strong>17,500원</strong>
+       </div>
+     </div>
+     <div class="new">
+       <div class="list">
+         <img src="img/사진5.png">
+       </div>
+       <div class="text">
+         <h3>애교살 메이커</h3>
+         <strong>12,000원</strong>
+       </div>
+     </div>
+   </div>
+   </div>
+  </div>
+  <div class="next">&gt;</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+ let current = 0;
+
+ const a = $(".lists .list-item:last-child").detach();
+ a.prependTo($(".lists")); //$(".lists").prepend(a);
+ $(".lists").css({
+  transform: "translateX(-50%)"
+ });
+
+function prepend(){
+ const det = $(".lists .list-item:nth-child(2)").detach();
+ det.prependTo($(".lists"));
+}
+
+function append(){
+ const det = $(".lists .list-item:nth-child(1)").detach();
+ det.appendTo($(".lists"));
+}
+
+ function slide(n){
+  $(".lists").animate({left: `${-100 * n}%`}, 600, function(){
+   $(".lists").css("left", "");
+  });
+ }
+
+ $(".prev").on('click',async function(){
+  await prepend();
+  current -= 1;
+  slide(current);
+ });
+
+ $(".next").on('click',async function(){
+  await append();
+  current += 1;
+  slide(current);
+ });
+</script>
+</body>
+</html>
