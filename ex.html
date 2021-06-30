@@ -5,13 +5,16 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Document</title>
+ <style>
+   .new {width: 20%;}
+ </style>
 </head>
 <body>
  <div class="item" style="display: flex; height: 360px;">
   <div class="prev">&lt;</div>
-  <!--<a href="#">신상품</a>-->
+  <!-- <a href="#">신상품</a> -->
   <div class="list-wrap" style="width: 100%; height: 100%; overflow: hidden; position: relative;">
-   <div class="lists" style="width: 200%; display: flex; position: absolute; top: 0; left: 0;">
+   <div class="lists" style="width: 400%; display: flex; position: absolute; top: 0; left: 0;">
     <div class="list-item" style="display: flex; width: 100%;">
      <div class="new">
        <div class="list">
@@ -113,39 +116,40 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
  let current = 0;
-
- const a = $(".lists .list-item:last-child").detach();
- a.prependTo($(".lists")); //$(".lists").prepend(a);
+ const a = $(".lists .list-item:nth-child(1)").clone();
+ const b = $(".lists .list-item:nth-child(2)").clone();
+ b.prependTo($(".lists")); //$(".lists").prepend(a);
+ a.prependTo($(".lists"));
  $(".lists").css({
   transform: "translateX(-50%)"
  });
 
-function prepend(){
- const det = $(".lists .list-item:nth-child(2)").detach();
- det.prependTo($(".lists"));
-}
-
-function append(){
- const det = $(".lists .list-item:nth-child(1)").detach();
- det.appendTo($(".lists"));
-}
-
- function slide(n){
+function prevFn(n){
   $(".lists").animate({left: `${-100 * n}%`}, 600, function(){
-   $(".lists").css("left", "");
+    const det = $(".lists .list-item:last-child").detach();
+    det.prependTo($(".lists"));
+    $(".lists").css("left", "");
+    current = 0;
   });
- }
+}
 
- $(".prev").on('click',async function(){
-  await prepend();
+function nextFn(n){
+  $(".lists").animate({left: `${-100 * n}%`}, 600, function(){
+    const det = $(".lists .list-item:nth-child(1)").detach();
+    det.appendTo($(".lists"));
+    $(".lists").css("left", "");
+    current = 0;
+  });
+}
+
+ $(".prev").on('click',function(){
   current -= 1;
-  slide(current);
+  prevFn(current);
  });
 
- $(".next").on('click',async function(){
-  await append();
+ $(".next").on('click',function(){
   current += 1;
-  slide(current);
+  nextFn(current);
  });
 </script>
 </body>

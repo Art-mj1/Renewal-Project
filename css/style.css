@@ -144,78 +144,141 @@
 
 #wrapper .slides {
  width: 100%;
- height: 80%;
+ height: 60%;
  margin: auto;
  overflow: hidden;
 }
 
-#wrapper .slides .slider {
+#wrapper .slides .slideshow-container {
  width: 100%;
  height: 80%;
  position: relative;
  left: 0;
 }
 
-.image {
- width: 100%;
- height: 100%;
+.mySlides {
+ display: none;
+}
+
+.prev,
+.next {
+ cursor: pointer;
  position: absolute;
+ top: 50%;
+ width: auto;
+ margin-top: -22px;
+ padding: 16px;
+ color: white;
+ font-weight: bold;
+ font-size: 18px;
+ transition: 0.6s ease;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
 }
 
-.image:nth-child(1) {
- left: 0;
- background-image: url(../img/main-bg1.jpg);
- background-size: contain;
- background-repeat: no-repeat;
+/* Position the "next button" to the right */
+.next {
+ right: 0;
+ border-radius: 3px 0 0 3px;
 }
 
-.image:nth-child(2) {
- left: 100%;
- background-image: url(../img/main-bg2.jpg);
- background-size: contain;
- background-repeat: no-repeat;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+ background-color: rgba(0, 0, 0, 0.8);
 }
 
-.image:nth-child(3) {
- left: 200%;
- background-image: url(../img/main-bg3.jpg);
- background-size: contain;
- background-repeat: no-repeat;
+
+/* Number text (1/3 etc) */
+.numbertext {
+ color: #f2f2f2;
+ font-size: 12px;
+ padding: 8px 12px;
+ position: absolute;
+ top: 0;
 }
 
-#wrapper .item {
- width: 100%;
- height: 50%;
+/* Fading animation */
+.fade {
+ -webkit-animation-name: fade;
+ -webkit-animation-duration: 1.5s;
+ animation-name: fade;
+ animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+ from {
+  opacity: .4
+ }
+
+ to {
+  opacity: 1
+ }
+}
+
+@keyframes fade {
+ from {
+  opacity: .4
+ }
+
+ to {
+  opacity: 1
+ }
+}
+
+#wrapper .item-menu>a {
  padding: 1%;
-}
-
-#wrapper .item>a {
  width: 100%;
- height: 10%;
+ height: 1%;
  font-family: 'Noto+Sans+KR';
  font-size: 30px;
  font-weight: 700;
+}
+
+
+#wrapper .item {
+ margin: 1%;
+ width: 100%;
+ height: 70%;
+ display: flex;
+}
+
+.prev1 {
+ align-items: center;
+}
+
+.next1 {
+ align-items: center;
 }
 
 #wrapper .item .list-wrap {
  width: 100%;
  height: 100%;
  margin-top: 1%;
+ overflow: hidden;
+ position: relative;
 }
 
 .list-wrap .lists {
+ width: 400%;
+ display: flex;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.list-wrap .lists .list-item {
  width: 100%;
- height: 100%;
  display: flex;
 }
 
 .list-wrap .new {
- width: 90%;
- height: 90%;
+ width: 100%;
+ height: 100%;
 }
 
 .list-wrap .new .list {
- width: 90%;
+ width: 100%;
  height: 100%;
  display: flex;
 }
@@ -240,4 +303,94 @@
 .list-wrap .text>strong {
  width: 100%;
  height: 50%;
+}
+
+.this-month {
+ padding: 1%;
+ width: 100%;
+ height: 100%;
+ display: flex;
+}
+
+.this-month .summer {
+ background-color: #eee;
+ width: 50%;
+ height: 100%;
+ background-image: url(../img/summer.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+}
+
+.sum-text {
+ position: absolute;
+ bottom: 0;
+}
+
+.sum-text>strong {
+ width: 100%;
+ height: 5%;
+ font-size: 30px;
+}
+
+.sum-text>p {
+ width: 100%;
+ height: 5%;
+ font-size: 25px;
+}
+
+.this-month .su-wrap {
+ width: 50%;
+ height: 100%;
+ background-color: #eee;
+}
+
+.this-month .su-wrap>li {
+ width: 100%;
+ height: 33.33%;
+ display: flex;
+}
+
+.su-wrap>li .image {
+ width: 40%;
+ height: 100%;
+}
+
+.su-wrap>li .image:nth-child(1) {
+ width: 40%;
+ height: 100%;
+ background-image: url(../img/su-one.png);
+ background-repeat: no-repeat;
+ background-size: contain;
+ z-index: 999;
+}
+
+.su-wrap>li .image:nth-child(2) {
+ width: 100%;
+ height: 33.33%;
+ background-image: url(../img/su-two.jpg);
+ background-repeat: no-repeat;
+ background-size: contain;
+}
+
+.su-wrap>li .image:nth-child(3) {
+ width: 100%;
+ height: 33.33%;
+ background-image: url(../img/su-three.jpg);
+ background-repeat: no-repeat;
+ background-size: contain;
+}
+
+.su-wrap>li .su-text {
+ width: 60%;
+ height: 100%;
+ align-items: center;
+}
+
+.su-text>p {
+ font-size: 15px;
+}
+
+.su-text>strong {
+ font-size: 20px;
 }
