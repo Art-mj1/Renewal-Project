@@ -54,9 +54,9 @@
  -ms-transform: translate(0, 0);
  transform: translate(0, 0);
  -webkit-transition: all 1s;
- -webkit-transition-property: -webkit-transform, height;
- -moz-transition-property: -moz-transform, height;
- transition-property: transform, height
+ -webkit-transition-property: -webkit-transform;
+ -moz-transition-property: -moz-transform;
+ transition-property: transform;
 }
 
 .lSSlideWrapper .lSFade>* {
@@ -133,8 +133,8 @@
  -ms-transform: translate3d(0, 0, 0);
  -webkit-transform: translate3d(0, 0, 0);
  -o-transform: translate3d(0, 0, 0);
- -webkit-transition-property: -webkit-transform;
- -moz-transition-property: -moz-transform;
+ -webkit-transition-property: none;
+ -moz-transition-property: none;
  user-select: none
 }
 
@@ -174,7 +174,7 @@
  margin-left: -0.6%;
  opacity: 90%;
  -webkit-transition: opacity .35s linear 0s;
- transition: opacity .35s linear 0s
+ transition: opacity .35s linear 0s;
 }
 
 .lSAction>a:hover {
@@ -193,13 +193,6 @@
 
 .lSAction>a.disabled {
  pointer-events: none
-}
-
-.cS-hidden {
- height: 1px;
- opacity: 0;
- filter: alpha(opacity=0);
- overflow: hidden
 }
 
 .lSSlideOuter.vertical {
