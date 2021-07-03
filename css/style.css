@@ -117,7 +117,7 @@
 }
 
 #wrapper .menu .nav {
- width: 50%;
+ width: 60%;
  height: 100%;
 }
 
@@ -130,7 +130,7 @@
 }
 
 #wrapper .menu .nav>ul>li {
- width: 12.5%;
+ width: 15%;
  height: 100%;
  display: flex;
  justify-content: space-evenly;
@@ -251,7 +251,6 @@
  align-items: center;
  font-size: 25px;
  font-weight: 500;
- margin-left: 1%;
 }
 
 #wrapper .item .list-wrap {
@@ -292,7 +291,7 @@
 }
 
 .list-wrap .new .text {
- width: 90%;
+ width: 100%;
  height: 16%;
  text-align: center;
 }
@@ -533,12 +532,13 @@
 }
 
 .price-area .prices {
- width: 100%;
+ width: 80%;
  display: flex;
+ margin-left: 1%
 }
 
 .prices>strong {
- width: 70%;
+ width: 58%;
  height: 100%;
  font-family: "Noto+Sans+KR";
  margin-left: 6%;
@@ -548,11 +548,11 @@
 }
 
 .prices>del {
- width: 30%;
+ width: 25%;
  height: 100%;
  font-family: "Noto+Sans+KR";
  display: flex;
- margin-left: 8%;
+ margin-left: 3%;
  font-size: 15px;
  margin-top: 2%;
 }

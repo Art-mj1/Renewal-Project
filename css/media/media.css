@@ -1,4 +1,14 @@
 @media screen and (max-width:1448px) {
+ #wrapper .menu .cate>img {
+  width: 38%;
+  height: 100%;
+ }
+
+ .right-now .pro-in {
+  width: 40%;
+  height: 100%;
+  padding: 2%;
+ }
 
  .pro-in .lo-name>p {
   width: 100%;
@@ -12,39 +22,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
- }
-
- .price-area .discount {
-  width: 10%;
-  height: 20%;
-  color: #ef426f;
-  font-family: "Noto+Sans+KR";
-  font-weight: 700;
-  font-size: 19px;
- }
-
- .price-area .prices {
-  width: 90%;
-  display: flex;
-  padding-left: 14%;
- }
-
- .prices>strong {
-  width: 74%;
-  height: 100%;
-  font-family: "Noto+Sans+KR";
-  font-weight: 700;
-  font-size: 19px;
-
- }
-
- .prices>del {
-  width: 26%;
-  height: 100%;
-  font-family: "Noto+Sans+KR";
-  display: flex;
-  font-size: 14px;
-  margin-top: 2%;
  }
 
  .this-month {
@@ -56,67 +33,55 @@
 
  .this-month .summer {
   background-color: #eee;
-  width: 50%;
+  width: 45%;
+  height: 100%;
+  position: relative;
+  padding: 1.5%;
+ }
+
+ .summer .su-img {
+  width: 100%;
   height: 100%;
   background-image: url(../../img/summer.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-size: contain;
+ }
+
+ .summer .sum-text {
+  width: 100%;
+  height: 20%;
+  margin-left: 1%;
+  position: absolute;
+  bottom: 0;
  }
 
  .this-month .su-wrap {
-  width: 50%;
+  width: 55%;
   height: 100%;
   background-color: #eee;
+  padding: 1%;
+ }
+
+ .this-month .su-wrap>li {
+  width: 100%;
+  height: 33.33%;
+  display: flex;
+  margin-top: 1%;
  }
 }
 
-@media screen and (max-width:1232px) {
 
- .pro-in .lo-name>p {
+@media screen and (max-width:1196px) {
+ #wrapper .slides {
   width: 100%;
-  height: 60%;
-  font-family: "Noto+Sans+KR";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.7;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  height: 50%;
+  margin: auto;
+  overflow: hidden;
+  padding: 1%;
  }
 
- .price-area .discount {
-  width: 10%;
-  height: 20%;
-  color: #ef426f;
-  font-family: "Noto+Sans+KR";
-  font-weight: 700;
-  font-size: 19px;
- }
-
- .price-area .prices {
-  width: 90%;
-  display: flex;
-  padding-left: 14%;
- }
-
- .prices>strong {
-  width: 74%;
+ .list-wrap .new .list>img {
+  width: 100%;
   height: 100%;
-  font-family: "Noto+Sans+KR";
-  font-weight: 700;
-  font-size: 19px;
-
- }
-
- .prices>del {
-  width: 26%;
-  height: 100%;
-  font-family: "Noto+Sans+KR";
-  display: flex;
-  font-size: 14px;
-  margin-top: 2%;
  }
 }
