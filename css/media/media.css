@@ -68,10 +68,59 @@
   display: flex;
   margin-top: 1%;
  }
+
+ .right #rights {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  padding: 0 0.5%;
+ }
+
+ #rights>li {
+  width: 20%;
+  height: 100%;
+ }
+
+ #rights .right-now {
+  width: 100%;
+  height: 100%;
+  background-color: #fce0e0;
+  display: flex;
+  align-items: center;
+ }
+
+ #rights .right-now>img {
+  width: 60%;
+  height: 100%;
+  background-color: #fce0e0;
+
+ }
 }
 
 
-@media screen and (max-width:1196px) {
+@media screen and (max-width:1300px) {
+ .right-now .pro-in {
+  width: 40%;
+  height: 100%;
+  padding: 2%;
+  margin-top: 15%;
+ }
+
+ #rights .right-now {
+  width: 100%;
+  height: 100%;
+  background-color: #fce0e0;
+  display: flex;
+  align-items: center;
+ }
+
+ #rights .right-now>img {
+  width: 50%;
+  height: 90%;
+  background-color: #fce0e0;
+
+ }
+
  #wrapper .slides {
   width: 100%;
   height: 50%;
@@ -80,8 +129,84 @@
   padding: 1%;
  }
 
- .list-wrap .new .list>img {
+ .lSAction>a {
+  width: 32px;
+  display: block;
+  top: 40%;
+ }
+}
+
+@media screen and (max-width:1196px) {
+ #wrapper>header .log-in {
+  width: 40%;
+  height: 100%;
+ }
+
+ #wrapper>header .log-in>ul {
   width: 100%;
   height: 100%;
+  display: flex;
+  padding: 10% 0;
+ }
+
+ #wrapper>header .log-in>ul>li {
+  width: 25%;
+  height: 100%;
+ }
+
+ #wrapper>header .logo {
+  width: 25%;
+  height: 85%;
+ }
+
+ #wrapper>header .input {
+  width: 30%;
+  height: 100%;
+  display: flex;
+ }
+
+ #wrapper .menu .cate>img {
+  width: 35%;
+  height: 90%;
+ }
+
+ .pro-in .price-area {
+  width: 110%;
+  display: flex;
+ }
+
+ .prices>strong {
+  width: 51%;
+  height: 100%;
+  font-family: "Noto+Sans+KR";
+  margin-left: 6%;
+  font-weight: 700;
+  font-size: 20px;
+ }
+
+ .prices>del {
+  width: 25%;
+  height: 100%;
+  font-family: "Noto+Sans+KR";
+  display: flex;
+  font-size: 13px;
+  margin-top: 2%;
+
+ }
+
+ .price-area .discount {
+  width: 20%;
+  height: 20%;
+  color: #ef426f;
+  font-family: "Noto+Sans+KR";
+  font-weight: 700;
+  font-size: 20px;
+ }
+
+ .list-wrap .new .text {
+  width: 100%;
+  height: 16%;
+  text-align: center;
+
  }
 }
