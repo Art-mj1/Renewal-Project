@@ -171,6 +171,220 @@
  }
 
  .pro-in .price-area {
+  margin-top: 1%;
+  width: 110%;
+  display: flex;
+ }
+
+ .prices>strong {
+  width: 51%;
+  height: 100%;
+  font-family: "Noto+Sans+KR";
+  margin-left: 6%;
+  font-weight: 700;
+  font-size: 20px;
+ }
+
+ .prices>del {
+  width: 25%;
+  height: 100%;
+  font-family: "Noto+Sans+KR";
+  display: flex;
+  font-size: 13px;
+  margin-top: 2%;
+
+ }
+ .this-month .summer{display:none;}
+ .this-month .su-wrap{width:100%;}
+ .this-month .su-wrap>li{margin:0;}
+
+ .price-area .discount {
+  width: 15%;
+  height: 20%;
+  color: #ef426f;
+  font-family: "Noto+Sans+KR";
+  font-weight: 700;
+  font-size: 19px;
+ }
+
+ .pro-in .lo-name>p {
+  line-height: 1.4;
+ }
+
+ .summer .su-img {
+  width: 100%;
+  height: 70%;
+  background-image: url(../../img/summer.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+ .list-wrap .new .text{width:100%}
+ .list-wrap .text>h3{font-size:12px;}
+}
+
+@media screen and (max-width:1098px) {
+ #wrapper>header {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ #wrapper>header .center {
+  justify-content: center;
+ }
+
+ #wrapper>header .menu_ico {
+  display: flex;
+  flex-direction: column;
+ }
+
+ #wrapper>header .topnav {
+  display: none;
+ }
+
+ #wrapper>header .mobile_nav {
+  z-index: 999;
+ }
+
+ #wrapper>header .mobile_inner .sp {
+  background: #ccc;
+ }
+
+ #wrapper>header .mobile_inner .mobile_logo_box .mobile_logo {
+  width: 120px;
+  height: 50px;
+ }
+
+ #wrapper>header .log-in {
+  width: 0;
+  height: 0;
+ }
+
+ #wrapper>header .log-in>ul {
+  display: none;
+ }
+
+ #wrapper>header .logo {
+  width: 50%;
+  height: 85%;
+ }
+
+ #wrapper>header .input {
+  width: 30%;
+  height: 100%;
+  display: flex;
+ }
+
+ .center .input .search {
+  width: 90%;
+ }
+
+ .center .input .search>i {
+  font-size: 1.3em;
+ }
+
+ .center .input .bag>i {
+  font-size: 1.3em;
+ }
+
+ #wrapper .menu .cate {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+ }
+
+ #wrapper .menu .cate .catalog {
+  width: 50%;
+  height: 100%;
+ }
+
+ #wrapper .menu .cate .catalog>i {
+  display: none;
+ }
+
+ #wrapper .menu .cate .catalog>a {
+  display: none;
+ }
+
+ #wrapper .menu .cate>img {
+  width: 95%;
+  height: 80%;
+ }
+
+ #wrapper .slides .slideshow-container {
+  height: 100%;
+ }
+
+ #wrapper .item {
+  display: none;
+ }
+
+ #wrapper .item-menu {
+  padding: 1%;
+  width: 100%;
+  height: 70%;
+ }
+ #wrapper .item-menu>a{line-height:2;}
+ #wrapper .item-menu .mobile-pic {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding:5%;
+ }
+
+ #wrapper .item-menu .mobile-pic1 {
+  width: 50%;
+  height: 100%;
+ }
+
+ .mobile-pic1 .img {
+  width: 90%;
+  height: 90%;
+  background: url(../../img/picture10.jpg)no-repeat 0 0;
+  background-size: cover;
+ }
+
+ #wrapper .item-menu .mobile-pic1>p {
+  width: 100%;
+  height: 5%;
+  font-size: 12px;
+ }
+
+ #wrapper .item-menu .mobile-pic1>span {
+  width: 100%;
+  height: 5%;
+  font-size: 13px;
+ }
+ .mobile-pic .mo-txt{width:90%;height:10%;display:flex;flex-direction: column;}
+ .mo-txt>p{font-size:13px;font-weight:700;line-height: 2em;text-align: center;}
+ #wrapper .item-menu .mobile-pic2 {
+  width: 50%;
+  height: 100%;
+ }
+
+ .mobile-pic2 .img {
+  width: 90%;
+  height: 90%;
+  background: url(../../img/picture10.jpg)no-repeat 0 0;
+  background-size: cover;
+ }
+
+ #wrapper .item-menu .mobile-pic2>p {
+  width: 100%;
+  height: 5%;
+  font-size: 12px;
+ }
+
+ #wrapper .item-menu .mobile-pic2>span {
+  width: 100%;
+  height: 5%;
+  font-size: 13px;
+ }
+ .theme{padding:1.02%;margin-top:5%;}
+ .pro-in .price-area {
+  margin-top: 1%;
   width: 110%;
   display: flex;
  }
@@ -195,18 +409,23 @@
  }
 
  .price-area .discount {
-  width: 20%;
+  width: 15%;
   height: 20%;
   color: #ef426f;
   font-family: "Noto+Sans+KR";
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
  }
 
- .list-wrap .new .text {
-  width: 100%;
-  height: 16%;
-  text-align: center;
+ .pro-in .lo-name>p {
+  line-height: 1.4;
+ }
 
+ .summer .su-img {
+  width: 100%;
+  height: 70%;
+  background-image: url(../../img/summer.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
  }
 }
