@@ -169,14 +169,14 @@
 .lSAction > .lSPrev {
     background-position: top;
     left: 2px;
-    background-image: url('../../img/controls-left.png');
+    background-image: url('../img/controls-left.png');
     background-repeat:no-repeat;
    
 }
 .lSAction > .lSNext {
     background-position: top;
     right: 2px;
-    background-image: url('../../img/controls-right.png');
+    background-image: url('../img/controls-right.png');
     background-repeat:no-repeat;
    
 }

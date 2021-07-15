@@ -461,9 +461,93 @@
 .pro-in .lo-name{padding:0;}
 }
 @media screen and (max-width:860px){
+ #wrapper>header .logo{width:50%;}
+ #wrapper>header .input{width:40%;}
+ #wrapper .slides{height:40%;}
  #wrapper .menu .cate>img{width:100%;height:70%;}
  .lSAction>a{width:29px;}
  .mobile-pic1 .img{width:90%;height:85%;background-size: contain;}
  .mobile-pic2 .img{width:90%;height:85%;background-size: contain;}
  .prev, .next{top:29%;}
+}
+@media screen and (max-width:768px){
+ #wrapper .menu .cate>img{height:65%;}
+ #wrapper .item-menu>a{padding:1.5%;}
+ #wrapper .slides{height:35%;}
+ #rights .right-now>img{width:45%;height:80%;}
+ .pro-in .price-area{padding-top:1%;}
+ .pro-in .lo-name>h4{margin-bottom:7%;}
+ .prices>del{display:none;}
+ .prices>strong{width:60%;}
+ .price-area .discount{width:20%;}
+ .right #rights{height:237.3px;}
+}
+@media screen and (max-width:660px){
+ #wrapper .slides{height:25%;}
+ #wrapper>header .logo{padding-left:20%;width:100%;height:90%;}
+ .center .input .bag{margin-top:12%;}
+ #wrapper .menu .cate{width:15%;}
+ #wrapper .menu .nav{width:100%;}
+ #wrapper .menu .nav>ul>li{width:16%;}
+ #wrapper .menu .nav>ul>li>a{font-size:13px;}
+ .center .input .search{display:none;}
+ .center .input .bag{width:100%; margin-top: 15%; }
+ #wrapper>header .input{height:100%;}
+ .center .input .bag>i{font-size:2em;height:100%;}
+ #wrapper .menu .cate>img{height:55%;}
+ .mobile-pic1 .img{height:60%;}
+ .mobile-pic2 .img{height:60%;}
+ #rights .right-now>img{height:60%;}
+ .pro-in .lo-name>h4 {margin-bottom: 7%; margin-top: 15%;}
+ .su-wrap>li .su-text{height:80%;}
+}
+@media screen and (max-width:582px){
+ #wrapper .menu .cate{display:none;}
+ #wrapper .menu .nav{width:calc(100 - 10px);}
+#wrapper .menu .nav>ul>li{width:15.5%;}
+#wrapper .menu .nav>ul>li>a{font-size:12px;}
+.mobile-pic .mo-txt{width: 100%;}
+.su-wrap .image{margin-top:5%;}
+.su-wrap .image2{margin-top:5%;}
+.su-wrap .image3{margin-top:5%;}
+.su-wrap>li .su-text{width:75%;}
+.su-text .brand{font-size:12px;}
+.prices>strong{width:67%;}
+.price-area .discount{font-size:13px;}
+.prices>strong{font-size:14px; margin-left: 15%;}
+.pro-in .price-area{padding-top:10%;}
+}
+@media screen and (max-width:484px){
+ #wrapper>header .mobile_inner .mobile_logo_box{padding:20px 0;}
+ .mobile_inner .mobile-li-sp{padding:10px 0;}
+ #wrapper .item-menu{margin-top:-10%;}
+ #wrapper .menu{padding:0 4px;}
+ #wrapper .menu .nav>ul>li{width:16.66%;}
+ #wrapper .menu .nav>ul>li>a{font-size:10px;}
+ .mySlides>img{height: 70%;width: 100%;}
+ #wrapper .item-menu .mobile-pic{width:100%;height:200%;flex-direction:column;}
+ #wrapper .item-menu .mobile-pic1{width: 100%;height:100%;}
+ .mobile-pic .mo-txt{width: 100%; text-align:center;}
+ .mobile-pic1 .img{height: 70%;width: 100%;}
+ #wrapper .item-menu .mobile-pic2{width: 100%;height:100%;}
+ .mobile-pic2 .img{height: 70%;width: 100%;}
+ .mo-txt>p{font-size:10px;}
+ .su-text .brand{font-size:10.5px; width:25%;}
+ .su-text>p{font-size:15px;}
+ .su-wrap .image{margin-top:10%;}
+.su-wrap .image2{margin-top:10%;}
+.su-wrap .image3{margin-top:10%;}
+.theme{margin-top:135%;}
+ .price-area .discount{display:none;}
+ .prices>strong {margin-left: 1%; font-size: 12px; width: 100%;}
+ .right{margin-top:10%;}
+ .right #rights{height:138.3px; margin-top: 5%;}
+ #rights .right-now>img{width: 55%; height:50%;}
+ .pro-in .lo-name>p{font-size:10px; margin-left:2%;}
+ .price>strong{font-size:15px;}
+ .pro-in .lo-name>h4{display:none;}
+ .right-now .pro-in{height:40%;}
+ .price-area .prices{margin-top:13%;}
+ .lSAction > .lSPrev{display:none;}
+ .lSAction > .lSNext{display:none;}
 }

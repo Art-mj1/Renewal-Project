@@ -61,6 +61,16 @@ $(function(){
    }
  });
  
+ const cuttingTEXT = function(){
+  // console.log($(".featured_item").length);
+  for(let i=0;i<$(".lo-name").length;i++){
+    const textLength = $(".lo-name").eq(i).find("p.etu").text();
+    console.log(textLength);
+
+    $(".lo-name").eq(i).find("p.etu").text(textLength.substr(0,24)+"...");
+  }
+}
+cuttingTEXT();
 });
 
 // $(document).ready(function(){});
